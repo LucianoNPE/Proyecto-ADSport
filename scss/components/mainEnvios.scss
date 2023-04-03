@@ -1,0 +1,32 @@
+main{
+    grid-area: main;
+    .mainEnvios{
+        background: linear-gradient(to bottom, rgb(74, 74, 74), black);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 200px;
+        .titulo{
+            padding: 20px;
+            background-color: rgb(255, 67, 98);
+            color: white;
+        }
+        .box1{
+            margin-left: 30px;
+        }
+        .box2{
+            margin-left: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .envioGratis{
+                font-weight: 400;
+            }
+            img{
+                display: flex;
+            }
+        }
+
+
+    }
+}

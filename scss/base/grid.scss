@@ -1,0 +1,8 @@
+body{
+    display: grid;
+    grid-template:
+        "header" 40px
+        "nav" auto
+        "main" auto
+        "footer" 150px;
+}

@@ -1,0 +1,33 @@
+footer{
+    background: linear-gradient(to bottom, rgb(219, 219, 219), rgb(182, 182, 182));
+    grid-area: footer;
+    color: rgb(58, 58, 58);
+    
+    display: flex;
+    flex-direction: column;
+    .pie{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .copy{
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        padding: 5px;
+    }
+    .logoI{
+        width: 80px;
+        &:hover{
+            background-color: gray;
+        }
+    }
+    .logoW{
+        width:40px;
+        &:hover{
+            background-color: gray;
+        }
+    }
+}

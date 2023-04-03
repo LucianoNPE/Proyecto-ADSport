@@ -1,0 +1,683 @@
+body {
+  display: grid;
+  grid-template: "header" 40px "nav" auto "main" auto "footer" 150px;
+}
+
+body {
+  display: grid;
+  grid-template: "header" 40px "nav" auto "main" auto "footer" 150px;
+}
+
+header {
+  display: flex;
+  grid-area: header;
+  background-color: rgb(255, 88, 116);
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background: linear-gradient(to bottom, rgb(219, 219, 219), rgb(182, 182, 182));
+  grid-area: footer;
+  color: rgb(58, 58, 58);
+  display: flex;
+  flex-direction: column;
+}
+footer .pie {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .copy {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+footer .logoI {
+  width: 80px;
+}
+footer .logoI:hover {
+  background-color: gray;
+}
+footer .logoW {
+  width: 40px;
+}
+footer .logoW:hover {
+  background-color: gray;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: space-between;
+  grid-area: nav;
+}
+nav img {
+  padding: 20px;
+}
+nav .nav-link {
+  color: rgb(55, 55, 55);
+}
+nav .nav-link:hover {
+  color: rgb(55, 55, 55);
+  background-color: rgb(255, 88, 116);
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    grid-area: nav;
+  }
+  nav img {
+    padding: 20px;
+  }
+  nav .nav-link {
+    color: rgb(55, 55, 55);
+  }
+  nav .nav-link:hover {
+    color: rgb(55, 55, 55);
+    background-color: rgb(255, 88, 116);
+  }
+  nav .contenedorEnlaces {
+    background: linear-gradient(to bottom, rgb(230, 230, 230), rgb(207, 207, 207));
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+main {
+  grid-area: main;
+}
+main .mainProductos {
+  background-color: rgb(255, 186, 186);
+}
+main .mainProductos .portada {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, rgb(74, 74, 74), black);
+  padding: 100px;
+}
+main .mainProductos .portada .text1 {
+  color: white;
+  font-weight: bold;
+}
+main .mainProductos .portada .text2 {
+  color: rgb(254, 150, 167);
+  font-weight: bold;
+  animation: opacidad 2s ease 0s infinite;
+}
+main .mainProductos .seccion1 {
+  margin-top: 50px;
+}
+main .mainProductos .seccion1 .tituloRemeras {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+main .mainProductos .seccion1 .contenedorRemeras {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px;
+}
+main .mainProductos .seccion1 .contenedorRemeras .card:hover {
+  opacity: 80%;
+}
+main .mainProductos .seccion2 .tituloCamperas {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+main .mainProductos .seccion2 .contenedorCamperas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px;
+}
+main .mainProductos .seccion2 .contenedorCamperas .card:hover {
+  opacity: 80%;
+}
+main .mainProductos .seccion3 .tituloCalzas {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+main .mainProductos .seccion3 .contenedorCalzas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px;
+}
+main .mainProductos .seccion3 .contenedorCalzas .card:hover {
+  opacity: 80%;
+}
+
+@keyframes opacidad {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+body {
+  display: grid;
+  grid-template: "header" 40px "nav" auto "main" auto "footer" 150px;
+}
+
+header {
+  display: flex;
+  grid-area: header;
+  background-color: rgb(255, 88, 116);
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background: linear-gradient(to bottom, rgb(219, 219, 219), rgb(182, 182, 182));
+  grid-area: footer;
+  color: rgb(58, 58, 58);
+  display: flex;
+  flex-direction: column;
+}
+footer .pie {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .copy {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+footer .logoI {
+  width: 80px;
+}
+footer .logoI:hover {
+  background-color: gray;
+}
+footer .logoW {
+  width: 40px;
+}
+footer .logoW:hover {
+  background-color: gray;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: space-between;
+  grid-area: nav;
+}
+nav img {
+  padding: 20px;
+}
+nav .nav-link {
+  color: rgb(55, 55, 55);
+}
+nav .nav-link:hover {
+  color: rgb(55, 55, 55);
+  background-color: rgb(255, 88, 116);
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    grid-area: nav;
+  }
+  nav img {
+    padding: 20px;
+  }
+  nav .nav-link {
+    color: rgb(55, 55, 55);
+  }
+  nav .nav-link:hover {
+    color: rgb(55, 55, 55);
+    background-color: rgb(255, 88, 116);
+  }
+  nav .contenedorEnlaces {
+    background: linear-gradient(to bottom, rgb(230, 230, 230), rgb(207, 207, 207));
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+main {
+  grid-area: main;
+}
+main .mainTalles {
+  background: linear-gradient(to bottom, rgb(74, 74, 74), black);
+}
+main .mainTalles .titulo {
+  padding: 20px;
+  background-color: rgb(255, 67, 98);
+  color: white;
+}
+main .mainTalles .box1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  color: white;
+  flex-direction: column;
+}
+main .mainTalles .box1 .comoMedir {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+main .mainTalles .box1 .comoMedir .subtitulo {
+  display: flex;
+  justify-content: center;
+}
+main .mainTalles .box1 .comoMedir .busto {
+  margin-top: 100px;
+}
+main .mainTalles .box1 img {
+  margin-top: 50px;
+}
+
+body {
+  display: grid;
+  grid-template: "header" 40px "nav" auto "main" auto "footer" 150px;
+}
+
+header {
+  display: flex;
+  grid-area: header;
+  background-color: rgb(255, 88, 116);
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background: linear-gradient(to bottom, rgb(219, 219, 219), rgb(182, 182, 182));
+  grid-area: footer;
+  color: rgb(58, 58, 58);
+  display: flex;
+  flex-direction: column;
+}
+footer .pie {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .copy {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+footer .logoI {
+  width: 80px;
+}
+footer .logoI:hover {
+  background-color: gray;
+}
+footer .logoW {
+  width: 40px;
+}
+footer .logoW:hover {
+  background-color: gray;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: space-between;
+  grid-area: nav;
+}
+nav img {
+  padding: 20px;
+}
+nav .nav-link {
+  color: rgb(55, 55, 55);
+}
+nav .nav-link:hover {
+  color: rgb(55, 55, 55);
+  background-color: rgb(255, 88, 116);
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    grid-area: nav;
+  }
+  nav img {
+    padding: 20px;
+  }
+  nav .nav-link {
+    color: rgb(55, 55, 55);
+  }
+  nav .nav-link:hover {
+    color: rgb(55, 55, 55);
+    background-color: rgb(255, 88, 116);
+  }
+  nav .contenedorEnlaces {
+    background: linear-gradient(to bottom, rgb(230, 230, 230), rgb(207, 207, 207));
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+main {
+  grid-area: main;
+}
+main .mainNosotros {
+  background: linear-gradient(to bottom, rgb(74, 74, 74), black);
+}
+main .mainNosotros .titulo {
+  background-color: rgb(255, 67, 98);
+  color: white;
+  padding: 20px;
+}
+main .mainNosotros .box1 {
+  margin-left: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: white;
+  font-size: xx-large;
+}
+
+body {
+  display: grid;
+  grid-template: "header" 40px "nav" auto "main" auto "footer" 150px;
+}
+
+header {
+  display: flex;
+  grid-area: header;
+  background-color: rgb(255, 88, 116);
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background: linear-gradient(to bottom, rgb(219, 219, 219), rgb(182, 182, 182));
+  grid-area: footer;
+  color: rgb(58, 58, 58);
+  display: flex;
+  flex-direction: column;
+}
+footer .pie {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .copy {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+footer .logoI {
+  width: 80px;
+}
+footer .logoI:hover {
+  background-color: gray;
+}
+footer .logoW {
+  width: 40px;
+}
+footer .logoW:hover {
+  background-color: gray;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: space-between;
+  grid-area: nav;
+}
+nav img {
+  padding: 20px;
+}
+nav .nav-link {
+  color: rgb(55, 55, 55);
+}
+nav .nav-link:hover {
+  color: rgb(55, 55, 55);
+  background-color: rgb(255, 88, 116);
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    grid-area: nav;
+  }
+  nav img {
+    padding: 20px;
+  }
+  nav .nav-link {
+    color: rgb(55, 55, 55);
+  }
+  nav .nav-link:hover {
+    color: rgb(55, 55, 55);
+    background-color: rgb(255, 88, 116);
+  }
+  nav .contenedorEnlaces {
+    background: linear-gradient(to bottom, rgb(230, 230, 230), rgb(207, 207, 207));
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+main {
+  grid-area: main;
+}
+main .mainEnvios {
+  background: linear-gradient(to bottom, rgb(74, 74, 74), black);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+main .mainEnvios .titulo {
+  padding: 20px;
+  background-color: rgb(255, 67, 98);
+  color: white;
+}
+main .mainEnvios .box1 {
+  margin-left: 30px;
+}
+main .mainEnvios .box2 {
+  margin-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .mainEnvios .box2 .envioGratis {
+  font-weight: 400;
+}
+main .mainEnvios .box2 img {
+  display: flex;
+}
+
+body {
+  display: grid;
+  grid-template: "header" 40px "nav" auto "main" auto "footer" 150px;
+}
+
+header {
+  display: flex;
+  grid-area: header;
+  background-color: rgb(255, 88, 116);
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background: linear-gradient(to bottom, rgb(219, 219, 219), rgb(182, 182, 182));
+  grid-area: footer;
+  color: rgb(58, 58, 58);
+  display: flex;
+  flex-direction: column;
+}
+footer .pie {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .copy {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+footer .logoI {
+  width: 80px;
+}
+footer .logoI:hover {
+  background-color: gray;
+}
+footer .logoW {
+  width: 40px;
+}
+footer .logoW:hover {
+  background-color: gray;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: space-between;
+  grid-area: nav;
+}
+nav img {
+  padding: 20px;
+}
+nav .nav-link {
+  color: rgb(55, 55, 55);
+}
+nav .nav-link:hover {
+  color: rgb(55, 55, 55);
+  background-color: rgb(255, 88, 116);
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    grid-area: nav;
+  }
+  nav img {
+    padding: 20px;
+  }
+  nav .nav-link {
+    color: rgb(55, 55, 55);
+  }
+  nav .nav-link:hover {
+    color: rgb(55, 55, 55);
+    background-color: rgb(255, 88, 116);
+  }
+  nav .contenedorEnlaces {
+    background: linear-gradient(to bottom, rgb(230, 230, 230), rgb(207, 207, 207));
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+main {
+  grid-area: main;
+}
+main .mainIndex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 171, 185);
+  animation-name: animacion-index;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+  animation-delay: 3s;
+}
+main .mainIndex .box1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+main .mainIndex .box1 img {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .mainIndex .box2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  justify-content: center;
+  background: linear-gradient(to bottom, rgb(35, 35, 35), rgb(64, 64, 64));
+}
+main .mainIndex .box2 img {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+@keyframes animacion-index {
+  0% {
+    background-color: rgb(255, 171, 185);
+  }
+  50% {
+    background-color: rgb(255, 56, 89);
+  }
+  100% {
+    background-color: rgb(255, 171, 185);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

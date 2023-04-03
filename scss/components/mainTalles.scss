@@ -1,0 +1,39 @@
+main{
+    grid-area: main;
+    .mainTalles{
+        background: linear-gradient(to bottom, rgb(74, 74, 74), black);
+
+        .titulo{
+            padding: 20px;
+            background-color: rgb(255, 67, 98);
+            color: white;
+        }
+        .box1{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 50px;
+            color: white;
+            flex-direction: column;
+            .comoMedir{
+                margin-top: 100px;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                .subtitulo{
+                    display: flex;
+                    justify-content: center;
+                }
+                .busto{
+                    margin-top: 100px;
+                }
+            }
+            img{
+                margin-top: 50px;
+            }
+        }
+    }
+    
+
+
+}

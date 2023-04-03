@@ -1,0 +1,91 @@
+@mixin titulos-secciones {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+@mixin contenedores-secciones{
+    display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 50px;
+                padding: 50px;
+                .card:hover {
+                    opacity: 80%;
+                }
+}
+
+main {
+    grid-area: main;
+
+    .mainProductos {
+        background-color:rgb(255, 186, 186);
+
+        .portada {
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(to bottom, rgb(74, 74, 74), black);
+            padding: 100px;
+
+            .text1 {
+                color: white;
+                font-weight: bold;
+            }
+
+            .text2 {
+                color: rgb(254, 150, 167);
+                font-weight: bold;
+                animation: opacidad 2s ease 0s infinite;
+            }
+        }
+
+        .seccion1 {
+            margin-top: 50px;
+            .tituloRemeras {
+                @include titulos-secciones;
+            }
+
+            .contenedorRemeras {
+                @include contenedores-secciones;
+            }
+        }
+
+        .seccion2 {
+
+            .tituloCamperas {
+                @include titulos-secciones;
+            }
+
+            .contenedorCamperas {
+                @include contenedores-secciones;
+
+            }
+        }
+
+        .seccion3 {
+
+            .tituloCalzas {
+                @include titulos-secciones;
+            }
+
+            .contenedorCalzas {
+                @include contenedores-secciones;
+
+            }
+        }
+    }
+}
+
+@keyframes opacidad {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
