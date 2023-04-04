@@ -29,6 +29,7 @@ nav{
         .contenedorEnlaces{
             background: linear-gradient(to bottom, rgb(230, 230, 230), rgb(207, 207, 207));
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             width: 100%;
         }

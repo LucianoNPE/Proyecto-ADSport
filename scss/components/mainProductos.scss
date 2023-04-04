@@ -1,31 +1,42 @@
 @mixin titulos-secciones {
     background-color: black;
     color: white;
+    width: 100%;
     padding: 20px;
 }
 
-@mixin contenedores-secciones{
+@mixin contenedores-secciones {
     display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 50px;
-                padding: 50px;
-                .card:hover {
-                    opacity: 80%;
-                }
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;  
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+        &:hover {
+            opacity: 80%;
+        }
+    }
+    
 }
 
 main {
     grid-area: main;
 
     .mainProductos {
-        background-color:rgb(255, 186, 186);
+        background-color: rgb(255, 186, 186);
+        width: 100%;
 
         .portada {
             display: flex;
+            flex-wrap: wrap;
             flex-direction: column;
             background: linear-gradient(to bottom, rgb(74, 74, 74), black);
-            padding: 100px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            padding-left: 10px;
 
             .text1 {
                 color: white;
@@ -41,6 +52,7 @@ main {
 
         .seccion1 {
             margin-top: 50px;
+
             .tituloRemeras {
                 @include titulos-secciones;
             }
